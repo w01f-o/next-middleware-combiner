@@ -1,5 +1,7 @@
 # Next Middleware Combiner
 
+[![npm download][npm-download-src]][npm-download-href] [![npm version][npm-version-src]][npm-version-href] [![License][license-src]][license-href]
+
 A lightweight library for combining middlewares in Next.js applications. This library allows you to easily compose multiple middlewares into one, making middleware handling in your Next.js project more efficient and manageable.
 
 ## Features
@@ -56,3 +58,16 @@ export const config = {
     '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|.*\\.svg|.*\\.gif).*)',
   ],
 };
+```
+
+## License
+[MIT License](./LICENSE)
+
+[npm-download-src]: https://img.shields.io/npm/dt/@w01f-o/next-middleware-combiner.svg?style=flat-square
+[npm-download-href]: https://npmjs.com/package/@w01f-o/next-middleware-combiner
+
+[npm-version-src]: https://img.shields.io/npm/v/@w01f-o/next-middleware-combiner.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@w01f-o/next-middleware-combiner
+
+[license-src]: https://img.shields.io/npm/l/@w01f-o/next-middleware-combiner.svg?style=flat-square
+[license-href]: https://npmjs.com/package/@w01f-o/next-middleware-combiner

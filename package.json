@@ -1,6 +1,6 @@
 {
   "name": "@w01f-o/next-middleware-combiner",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight library to combine middlewares in Next.js",
   "scripts": {
     "build": "rimraf dist && rollup -c"
@@ -23,7 +23,8 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE.md"
   ],
   "repository": {
     "type": "git",
