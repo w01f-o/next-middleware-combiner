@@ -11,9 +11,6 @@ export default [
         format: 'esm',
         plugins: [
           terser({
-            compress: {
-              drop_console: true,
-            },
             mangle: true,
           }),
         ],
@@ -23,9 +20,6 @@ export default [
         format: 'cjs',
         plugins: [
           terser({
-            compress: {
-              drop_console: true,
-            },
             mangle: true,
           }),
         ],
