@@ -1,6 +1,6 @@
 {
   "name": "@w01f-o/next-middleware-combiner",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A lightweight library to combine middlewares in Next.js",
   "scripts": {
     "build": "rimraf dist && rollup -c"
