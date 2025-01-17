@@ -2,18 +2,15 @@ import { NextMiddleware, NextResponse } from 'next/server';
 import { MiddlewareFactory } from './types/MiddlewareFactory.type';
 
 export const combineMiddlewares = (
-  callbacks: MiddlewareFactory[] = []
+  callbacks: MiddlewareFactory[] = [],
+  index: number = 0
 ): NextMiddleware => {
-  const createMiddleware = (index: number): NextMiddleware => {
-    const current = callbacks[index];
-    if (current) {
-      const next = createMiddleware(index + 1);
+  const current = callbacks[index];
+  if (current) {
+    const next = combineMiddlewares(callbacks, index + 1);
 
-      return current(next);
-    }
+    return current(next);
+  }
 
-    return () => NextResponse.next();
-  };
-
-  return createMiddleware(0);
+  return () => NextResponse.next();
 };
