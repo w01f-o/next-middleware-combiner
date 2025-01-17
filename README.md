@@ -61,7 +61,7 @@ export const config = {
 ```
 
 ## License
-[MIT License](./LICENSE)
+[MIT License](./LICENSE.md)
 
 [npm-download-src]: https://img.shields.io/npm/dt/@w01f-o/next-middleware-combiner.svg?style=flat-square
 [npm-download-href]: https://npmjs.com/package/@w01f-o/next-middleware-combiner
